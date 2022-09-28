@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo/favicon.ico" />
     <title>Fenix</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
 </head>
 <body>
     <!-- <header class="header js-header px-[5.86vw] absolute w-full z-[999] mt-[45px] fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] fourkxl:px-[0.5vw] maxdp:px-[15px] transition-transform duration-75"> -->
-    <header class="header js-header px-[5.86vw] absolute w-full z-[999] pt-[45px] fourkxl:px-[0.5vw] maxdp:px-[15px]">
-        <div class="header-inner js-header-inner flex items-center justify-between fourk:absolute fourk:w-full fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] ">
+    <header class="header header-1 js-header-1 px-[5.86vw] absolute w-full z-[999] fourkxl:px-[0.5vw] maxdp:px-[15px]">
+        <div class="header-inner js-header-inner-1 flex items-center justify-between fourk:absolute fourk:w-full fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] ">
             <div class="header-left maxdp:hidden"> 
                 <nav>
                     <ul class="flex -mx-[var(--menu-item-space-x)]">
@@ -24,9 +24,8 @@
             </div>
             <div class="header-center  fourksm:mr-0">
                 <div class="header-logo js-header-logo w-[21.5vw] maxsm:w-[150px]">
-                    <a href="/" class="block">
-                        <img class="w-full js-logo" src="assets/images/logo/logo.svg" alt="Fenix">
-                        <img class="max-w-[15.3vw] mx-auto hidden js-text-logo maxdp:max-w-full" src="assets/images/logo/fenix-text-logo.svg" alt="Fenix">
+                    <a href="/" class="block relative">
+                        <img class="w-full logo js-logo" src="./assets/images/logo/logo.svg" alt="Fenix">
                     </a>
                 </div>
             </div>
@@ -39,15 +38,65 @@
                     </ul>
                 </nav>
             </div>
-            <div class="js-menu-bar hidden maxdp:block">
+            <div class="js-menu-bar-1 hidden maxdp:block">
                 <svg height="25px" version="1.1" viewBox="0 0 25 25" width="25px"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1"><g fill="#a78960" id="Hamburger"><path d="M0,2 L25,2 L25,6 L0,6 L0,2 Z M0,10 L25,10 L25,14 L0,14 L0,10 Z M0,18 L25,18 L25,22 L0,22 L0,18 Z"/></g></g></svg>
             </div>
             <!-- #3E1238 -->
         </div>
         
         <!-- mobile menu -->
-        <div class="mobile-menu js-mobile-menu flex justify-center items-center fixed inset-0 bg-white w-full h-full overflow-y-auto opacity-0 invisible bg-gradient-to-b from-[#15333F] to-[#3E1238]">
-            <div class="mobile-menu-close js-mobile-menu-close fixed top-[33px] right-[15px]">
+        <div class="mobile-menu js-mobile-menu-1 flex justify-center items-center fixed inset-0 bg-white w-full h-full overflow-y-auto opacity-0 invisible bg-gradient-to-b from-[#15333F] to-[#3E1238]">
+            <div class="mobile-menu-close js-mobile-menu-close-1 fixed top-[33px] right-[15px] z-[999]">
+                <svg width="22px" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"><title/><path fill="#a78960" d="M8.25,0,32,23.75,55.75,0,64,8.25,40.25,32,64,55.75,55.75,64,32,40.25,8.25,64,0,55.75,23.75,32,0,8.25Z" data-name="&lt;Compound Path&gt;" id="_Compound_Path_"/></svg>
+            </div>
+            <nav class="w-screen h-screen">
+                <ul class="mobile-menu-items js-mobile-menu-items w-screen h-screen flex flex-col justify-center items-center">
+                    <li><a href="#mission" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Mission</a></li>
+                    <li><a href="#media" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Media</a></li>
+                    <li><a href="#team" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Team</a></li>
+                    <li><a href="#membership" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Membership</a></li>
+                    <li><a href="#events" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Events</a></li>
+                    <li><a href="#contact" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <header class="header header-2 js-header-2 px-[5.86vw] absolute w-full z-[999] fourkxl:px-[0.5vw] maxdp:px-[15px]">
+        <div class="header-inner js-header-inner-2 flex items-center justify-between fourk:absolute fourk:w-full fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] ">
+            <div class="header-left maxdp:hidden"> 
+                <nav>
+                    <ul class="flex -mx-[var(--menu-item-space-x)]">
+                        <li class="group"><a href="#mission" class="font-gothamlight font-normal text-[22px] text-white1  px-[var(--menu-item-space-x)] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Our Mission</a></li>
+                        <li class="group"><a href="#media" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Media</a></li>
+                        <li class="group"><a href="#team" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Our Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-center  fourksm:mr-0">
+                <div class="header-logo js-header-logo w-[21.5vw] maxsm:w-[150px]">
+                    <a href="/" class="block relative">
+                        <img class="max-w-[15.3vw] mx-auto text-logo js-text-logo maxdp:max-w-full" src="./assets/images/logo/fenix-text-logo.svg" alt="Fenix">
+                    </a>
+                </div>
+            </div>
+            <div class="header-right maxdp:hidden">
+                <nav class="maxdp:mb-[5px]">
+                    <ul class="flex -mx-[var(--menu-item-space-x)]">
+                        <li class="group"><a href="#membership" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Membership</a></li>
+                        <li class="group"><a href="#events" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Events</a></li>
+                        <li class="group"><a href="#contact" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="js-menu-bar-2 hidden maxdp:block">
+                <svg height="25px" version="1.1" viewBox="0 0 25 25" width="25px"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1"><g fill="#a78960" id="Hamburger"><path d="M0,2 L25,2 L25,6 L0,6 L0,2 Z M0,10 L25,10 L25,14 L0,14 L0,10 Z M0,18 L25,18 L25,22 L0,22 L0,18 Z"/></g></g></svg>
+            </div>
+            <!-- #3E1238 -->
+        </div>
+        
+        <!-- mobile menu -->
+        <div class="mobile-menu js-mobile-menu-2 flex justify-center items-center fixed inset-0 bg-white w-full h-full overflow-y-auto opacity-0 invisible bg-gradient-to-b from-[#15333F] to-[#3E1238]">
+            <div class="mobile-menu-close js-mobile-menu-close-2 fixed top-[33px] right-[15px]  z-[999]">
                 <svg width="22px" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"><title/><path fill="#a78960" d="M8.25,0,32,23.75,55.75,0,64,8.25,40.25,32,64,55.75,55.75,64,32,40.25,8.25,64,0,55.75,23.75,32,0,8.25Z" data-name="&lt;Compound Path&gt;" id="_Compound_Path_"/></svg>
             </div>
             <nav class="w-screen h-screen">
@@ -67,7 +116,7 @@
         <!-- start hero -->
         <section class="home-banner relative min-h-screen maxmd:h-auto">
             <!-- <div class="absolute inset-0 w-full h-full bg-black opacity-[.6]"></div> -->
-            <div class="banner-content px-[5.86vw] pt-[311px] relative fourksm:min-h-screen fourksm:pt-[22vw] maxdp:px-[15px] maxmd:pt-[250px]">
+            <div class="banner-content px-[5.86vw] pt-[311px] relative fourksm:min-h-screen fourksm:pt-[27.5vw] maxdp:px-[15px] maxmd:pt-[250px]">
                 <h1 class="banner-title font-gothamlight text-gold2 text-center leading-[5.6rem] mb-[52px] fourksm:mb-[100px] maxdp:leading-none maxmd:mb-[90px]">Let’s <span class="font-luxiaregular">change</span> <br> the <span class="font-luxiaregular">landscape</span></h1>
                 <div class="banner-block max-w-[82.03vw] mx-auto grid grid-cols-3 fourklg:max-w-[69.03vw] fourksm:pb-[100px] maxlg:max-w-full maxmd:grid-cols-1">
                     <div class="single-block px-[4.688vw] mb-[53px] relative z-10 maxlg:px-[1vw] maxmd:max-w-[350px] maxmd:mx-[auto] maxmd:px-[5vw] maxsm:px-0">
@@ -122,10 +171,10 @@
         <!-- start mission -->
         <section id="mission" class="mission pt-[83px] pb-[73px] bg-gradient-to-b from-[#0e303d] to-[#16273c] relative fourkm:py-[250px] maxlg:py-[150px] maxmd:py-[90px]">
                 <div class="home-shape-1 absolute -top-[13vw] left-0 fourksm:-top-[8vw]">
-                    <img src="assets/images/shape/shape-1_1.png" alt="Image">
+                    <img src="./assets/images/shape/shape-1_1.png" alt="Image">
                 </div>
                 <div class="home-shape-2 absolute -top-[3.5vw] right-0 z-10 fourksm:-top-[2vw]">
-                    <img src="assets/images/shape/shape-2_1.png" alt="Image">
+                    <img src="./assets/images/shape/shape-2_1.png" alt="Image">
                 </div>
             <div class="inner-area px-[5.86vw] maxdp:px-[15px]">
                 
@@ -142,7 +191,7 @@
         <!-- start slider -->
         <section id="media" class="slider-area relative bg-gradient-to-b from-[#350937] to-[#201e3b]">
             <div class="home-shape-4 absolute right-0 -bottom-[22vw] z-10 fourkm:-bottom-[12vw]">
-                <img src="assets/images/shape/shape-4_1.png" alt="Image">
+                <img src="./assets/images/shape/shape-4_1.png" alt="Image">
             </div>
             <div class="inner-area">
                 <div class="swiper home-slider h-[100vh] maxlg:h-[auto]">
@@ -151,7 +200,7 @@
                             <div class="table-cell align-middle h-[100vh] text-[22px]">
                                 <div class="h-[100vh] px-[5.86vw] maxdp:px-[15px]">
                                     <div class="home-shape-3 h-auto w-[50vw] absolute left-0 lg:bottom-0 maxlg:bottom-auto z-10">
-                                        <img class="h-full" src="assets/images/shape/shape-3.svg" alt="Image">
+                                        <img class="h-full" src="./assets/images/shape/shape-3.svg" alt="Image">
                                     </div>
                                     <article class="relative z-20 h-[100vh] pt-[370px] pb-[200px] flex flex-col gap-[40px] max-w-[68vw] mx-auto maxlg:max-w-[80vw] maxmd:justify-center maxmd:flex-col maxmd:max-w-full maxmd:gap-[50px]">
                                         <div class="">
@@ -171,7 +220,7 @@
                             <div class="table-cell align-middle h-[100vh] text-[22px]">
                                 <div class="h-[100vh] px-[5.86vw] maxdp:px-[15px]">
                                     <div class="home-shape-3 h-auto w-[50vw] absolute left-0 lg:bottom-0 maxlg:bottom-auto z-10">
-                                        <img class="h-full" src="assets/images/shape/shape-3.svg" alt="Image">
+                                        <img class="h-full" src="./assets/images/shape/shape-3.svg" alt="Image">
                                     </div>
                                     <article class="relative z-20 h-[100vh] pt-[370px] pb-[200px] flex flex-col gap-[40px] max-w-[68vw] mx-auto maxlg:max-w-[80vw] maxmd:justify-center maxmd:flex-col maxmd:max-w-full maxmd:gap-[50px]">
                                         <div class="">
@@ -190,7 +239,7 @@
                             <div class="table-cell align-middle h-[100vh] text-[22px]">
                                 <div class="h-[100vh] px-[5.86vw] maxdp:px-[15px]">
                                     <div class="home-shape-3 h-auto w-[50vw] absolute left-0 lg:bottom-0 maxlg:bottom-auto z-10">
-                                        <img class="h-full" src="assets/images/shape/shape-3.svg" alt="Image">
+                                        <img class="h-full" src="./assets/images/shape/shape-3.svg" alt="Image">
                                     </div>
                                     <article class="relative z-20 h-[100vh] pt-[370px] pb-[200px] flex flex-col gap-[40px] max-w-[68vw] mx-auto maxlg:max-w-[80vw] maxmd:justify-center maxmd:flex-col maxmd:max-w-full maxmd:gap-[50px]">
                                         <div class="">
@@ -217,7 +266,7 @@
         <section id="team" class="abt-contact pt-[93px] bg-gradient-to-r from-[#15333F] to-[#3E1238]">
             <div class="inner-area px-[5.86vw] relative maxdp:px-[15px]">
                 <div class="home-shape-5 absolute top-0 left-0 z-10 maxlg:w-[15vw]">
-                    <img src="assets/images/shape/shape-5_3.png" alt="Image">
+                    <img src="./assets/images/shape/shape-5_3.png" alt="Image">
                 </div>
                 <div class="about-area pb-[82px]">
                     <div class="section-header text-center">
@@ -234,20 +283,20 @@
                         <div class="about-role-inner flex flex-wrap justify-center items-center gap-[7.8vw] relative z-[12] maxmd:flex-col">
                             <div>
                                 <div class="about-role-avatar relative max-w-[230px] rounded-full bg-gradient-to-r from-[#a08257] via-[#cdbaa0] to-[#c7a06d] p-[3px] fourkm:max-w-[14vw] maxmd:mb-[40px]">
-                                    <img class="w-full h-full rounded-full" src="assets/images/about/avatar-2_1.jpg" alt="Avatar">
+                                    <img class="w-full h-full rounded-full" src="./assets/images/about/avatar-2_1.jpg" alt="Avatar">
                                 </div>
                                 <h2 class="about-role-name text-center mt-[12px] font-luxiadisplay text-[20px] tracking-[2px] leading-none bg-gradient-to-r from-[#a3865b] via-[#c5ac8b] to-[#c7a06d] bg-clip-text text-transparent">Diane Yoo</h2>
                             </div>
                             <div>
                                 <div class="about-role-avatar relative max-w-[230px] rounded-full bg-gradient-to-r from-[#a08257] via-[#cdbaa0] to-[#c7a06d] p-[3px] fourkm:max-w-[14vw] maxmd:mb-[40px]">
-                                    <img class="w-full h-full rounded-full" src="assets/images/about/avatar-1_1.jpg" alt="Avatar">
+                                    <img class="w-full h-full rounded-full" src="./assets/images/about/avatar-1_1.jpg" alt="Avatar">
                                 </div>
                                 <h2 class="about-role-name text-center mt-[12px] font-luxiadisplay text-[20px] tracking-[2px] leading-none bg-gradient-to-r from-[#a3865b] via-[#c5ac8b] to-[#c7a06d] bg-clip-text text-transparent">Shveta Pillai</h2>
                             </div>
                         </div>
                         <!-- <div class="about-single-role flex items-center max-w-[85.5vw] relative z-10 even:maxlg:mt-[50px] maxlg:max-w-full maxmd:flex-col">
                             <div class="about-role-avatar relative max-w-[26.56vw] rounded-full bg-gradient-to-r from-[#a08257] via-[#cdbaa0] to-[#c7a06d] p-[3px] maxmd:mb-[40px]">
-                                <img class="w-full h-full rounded-full" src="assets/images/about/avatar-2_1.jpg" alt="Avatar">
+                                <img class="w-full h-full rounded-full" src="./assets/images/about/avatar-2_1.jpg" alt="Avatar">
                             </div>
                             <div class="about-role-position maxmd:!text-center">
                                 <h2 class="about-role-name font-luxiadisplay text-[30px] tracking-[2px] leading-none bg-gradient-to-r from-[#a3865b] via-[#c5ac8b] to-[#c7a06d] bg-clip-text text-transparent mb-[24px]">Diane Yoo</h2>
@@ -261,7 +310,7 @@
                         </div>
                         <div class="about-single-role flex items-center max-w-[85.5vw] relative z-10 even:maxlg:mt-[50px] maxlg:max-w-full maxmd:flex-col">
                             <div class="about-role-avatar relative max-w-[26.56vw] rounded-full bg-gradient-to-r from-[#a08257] via-[#cdbaa0] to-[#c7a06d] p-[3px] maxmd:mb-[40px]">
-                                <img class="w-full h-full rounded-full" src="assets/images/about/avatar-1_1.jpg" alt="Avatar">
+                                <img class="w-full h-full rounded-full" src="./assets/images/about/avatar-1_1.jpg" alt="Avatar">
                             </div>
                             <div class="about-role-position maxmd:!text-center">
                                 <h2 class="about-role-name font-luxiadisplay text-[30px] tracking-[2px] leading-none bg-gradient-to-r from-[#a3865b] via-[#c5ac8b] to-[#c7a06d] bg-clip-text text-transparent mb-[24px]">Shveta E. Pillai</h2>
@@ -276,7 +325,7 @@
                     </div>
                 </div>
                 <div class="home-shape-6 absolute z-10 -bottom-[11.9vw] right-0 maxlg:w-[34vw] maxlg:-bottom-[5vw] maxmd:bottom-0">
-                    <img class="fourkm:w-[23vw]" src="assets/images/shape/shape-6.png" alt="Image">
+                    <img class="fourkm:w-[23vw]" src="./assets/images/shape/shape-6.png" alt="Image">
                 </div>
             </div>
         </section>
@@ -337,10 +386,10 @@
                 </div>
             </div>
             <div class="home-shape-7 absolute left-0 -bottom-[8.8vw] z-10 maxlg:w-[16vw]">
-                <img src="assets/images/shape/shape-7.png" alt="Image">
+                <img src="./assets/images/shape/shape-7.png" alt="Image">
             </div>
             <div class="home-shape-8 absolute right-0 -top-[40px] z-10 maxlg:w-[32vw]">
-                <img src="assets/images/shape/shape-8.svg" alt="Image">
+                <img src="./assets/images/shape/shape-8.svg" alt="Image">
             </div>
         </section>
         <section id="contact" class="contact-area contact-bg pt-[88px] pb-[103px] relative">
@@ -351,7 +400,7 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="home-shape-9 max-w-[18.15vw]  absolute -bottom-[18px] left-[4vw] fourk:max-w-[9vw] fourkm:max-w-[10vw] fourkm:mr-[6.5vw] maxdp:left-0 maxmd:hidden">
-                            <img class="w-full" src="assets/images/logo/fenix-bird-left.svg" alt="Image">
+                            <img class="w-full" src="./assets/images/logo/fenix-bird-left.svg" alt="Image">
                         </div>
                         <form action="#" class="max-w-[460px] maxxsmm:max-w-full">
                             <div class="flex px-[25px] mb-[28px] maxmd:py-[10px] maxxsmm:px-0">
@@ -377,21 +426,21 @@
                             </div>
                         </form>
                         <!-- <div class="home-shape-7 w-[18.15vw] mr-[3.5vw] flex items-end maxmd:hidden">
-                            <img src="assets/images/logo/fenix-bird.svg" alt="Image">
+                            <img src="./assets/images/logo/fenix-bird.svg" alt="Image">
                         </div> -->
                     </div>
                 </div>
             </div>
             <div class="home-shape-9 absolute bottom-0 right-[14.45vw] maxmd:w-[35vw]">
-                <img src="assets/images/shape/shape-9.svg" alt="Image">
+                <img src="./assets/images/shape/shape-9.svg" alt="Image">
             </div>
         </section>
         <!-- end about-contact -->
     </main>
 
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/flowbite.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/flowbite.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
