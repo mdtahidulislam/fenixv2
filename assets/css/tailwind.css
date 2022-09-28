@@ -1,0 +1,454 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom css */
+@layer base {
+
+/* ====================================================
+                        Fonts
+===================================================== */
+@font-face {
+  font-family: 'gothammedium';
+  src: url('../fonts/gotham_medium.woff2') format('woff2'),
+       url('../fonts/gotham_medium.woff') format('woff'),
+       url('../fonts/gotham_medium.ttf') format('truetype'),
+       url('../fonts/gotham_medium.svg#gothammedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothamblack';
+  src: url('../fonts/gotham-black.woff2') format('woff2'),
+       url('../fonts/gotham-black.woff') format('woff'),
+       url('../fonts/gotham-black.ttf') format('truetype'),
+       url('../fonts/gotham-black.svg#gothamblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothambold';
+  src: url('../fonts/gotham-bold.woff2') format('woff2'),
+       url('../fonts/gotham-bold.woff') format('woff'),
+       url('../fonts/gotham-bold.ttf') format('truetype'),
+       url('../fonts/gotham-bold.svg#gothambold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothambold';
+  src: url('../fonts/gothambold.woff2') format('woff2'),
+       url('../fonts/gothambold.woff') format('woff'),
+       url('../fonts/gothambold.ttf') format('truetype'),
+       url('../fonts/gothambold.svg#gothambold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothambold_italic';
+  src: url('../fonts/gothambolditalic.woff2') format('woff2'),
+       url('../fonts/gothambolditalic.woff') format('woff'),
+       url('../fonts/gothambolditalic.ttf') format('truetype'),
+       url('../fonts/gothambolditalic.svg#gothambold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothambook';
+  src: url('../fonts/gothambook.woff2') format('woff2'),
+       url('../fonts/gothambook.woff') format('woff'),
+       url('../fonts/gothambook.ttf') format('truetype'),
+       url('../fonts/gothambook.svg#gothambook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothambookitalic';
+  src: url('../fonts/gotham-bookitalic.woff2') format('woff2'),
+       url('../fonts/gotham-bookitalic.woff') format('woff'),
+       url('../fonts/gotham-bookitalic.ttf') format('truetype'),
+       url('../fonts/gotham-bookitalic.svg#gothambookitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothambook_italic';
+  src: url('../fonts/gothambookitalic.woff2') format('woff2'),
+       url('../fonts/gothambookitalic.woff') format('woff'),
+       url('../fonts/gothambookitalic.ttf') format('truetype'),
+       url('../fonts/gothambookitalic.svg#gothambook_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothamlight';
+  src: url('../fonts/gotham-light.woff2') format('woff2'),
+       url('../fonts/gotham-light.woff') format('woff'),
+       url('../fonts/gotham-light.ttf') format('truetype'),
+       url('../fonts/gotham-light.svg#gothamlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothamlight';
+  src: url('../fonts/gothamlight.woff2') format('woff2'),
+       url('../fonts/gothamlight.woff') format('woff'),
+       url('../fonts/gothamlight.ttf') format('truetype'),
+       url('../fonts/gothamlight.svg#gothamlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothamlight_italic';
+  src: url('../fonts/gothamlightitalic.woff2') format('woff2'),
+       url('../fonts/gothamlightitalic.woff') format('woff'),
+       url('../fonts/gothamlightitalic.ttf') format('truetype'),
+       url('../fonts/gothamlightitalic.svg#gothamlight_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothammedium';
+  src: url('../fonts/gothammedium.woff2') format('woff2'),
+       url('../fonts/gothammedium.woff') format('woff'),
+       url('../fonts/gothammedium.ttf') format('truetype'),
+       url('../fonts/gothammedium.svg#gothammedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* @font-face {
+  font-family: 'gothammedium';
+  src: url('../fonts/gothammediumitalic.woff2') format('woff2'),
+       url('../fonts/gothammediumitalic.woff') format('woff'),
+       url('../fonts/gothammediumitalic.ttf') format('truetype'),
+       url('../fonts/gothammediumitalic.svg#gothammedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+} */
+
+@font-face {
+  font-family: 'gothamthin';
+  src: url('../fonts/gotham-thin.woff2') format('woff2'),
+       url('../fonts/gotham-thin.woff') format('woff'),
+       url('../fonts/gotham-thin.ttf') format('truetype'),
+       url('../fonts/gotham-thin.svg#gothamthin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothamthinitalic';
+  src: url('../fonts/gotham-thinitalic.woff2') format('woff2'),
+       url('../fonts/gotham-thinitalic.woff') format('woff'),
+       url('../fonts/gotham-thinitalic.ttf') format('truetype'),
+       url('../fonts/gotham-thinitalic.svg#gothamthinitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothamultraitalic';
+  src: url('../fonts/gotham-ultraitalic.woff2') format('woff2'),
+       url('../fonts/gotham-ultraitalic.woff') format('woff'),
+       url('../fonts/gotham-ultraitalic.ttf') format('truetype'),
+       url('../fonts/gotham-ultraitalic.svg#gothamultraitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothamxlight';
+  src: url('../fonts/gotham-xlight.woff2') format('woff2'),
+       url('../fonts/gotham-xlight.woff') format('woff'),
+       url('../fonts/gotham-xlight.ttf') format('truetype'),
+       url('../fonts/gotham-xlight.svg#gothamxlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gothamxlightitalic';
+  src: url('../fonts/gotham-xlightitalic.woff2') format('woff2'),
+       url('../fonts/gotham-xlightitalic.woff') format('woff'),
+       url('../fonts/gotham-xlightitalic.ttf') format('truetype'),
+       url('../fonts/gotham-xlightitalic.svg#gothamxlightitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'luxiadisplay';
+  src: url('../fonts/luxia-display.woff2') format('woff2'),
+       url('../fonts/luxia-display.woff') format('woff'),
+       url('../fonts/luxia-display.ttf') format('truetype'),
+       url('../fonts/luxia-display.svg#luxiadisplay') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'luxiaregular';
+  src: url('../fonts/luxia-regular.woff2') format('woff2'),
+       url('../fonts/luxia-regular.woff') format('woff'),
+       url('../fonts/luxia-regular.ttf') format('truetype'),
+       url('../fonts/luxia-regular.svg#luxiaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* ====================================================
+                        Root Variable
+===================================================== */
+:root {
+  --menu-item-space-x: 2.032vw;
+}
+
+/* ====================================================
+                        Common CSS
+===================================================== */
+
+/* .gradient-border {
+  border: 3px solid #a3865b;
+  border-radius: 50px;
+} */
+
+/* ====================================================
+                        Home Page
+===================================================== */
+/* menu area */
+.mobile-menu {
+  -webkit-transition: all 0.44s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  transition: all 0.44s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+.mobile-menu-items {
+  padding: 36px 15px 15px;
+}
+
+.mobile-menu-items li {
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 0.44s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  transition: all 0.44s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+.mobile-menu-items li a {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E7D6B7;
+}
+
+.mobile-menu-items li:last-child a {
+  border-bottom: 0;
+}
+
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu.open .mobile-menu-items li {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+@media (max-width: 992px) {
+  .header-center {
+    padding-left: 15px !important;
+  }
+
+  .js-menu-bar {
+    padding-right: 15px !important;
+  }
+}
+
+
+/* banner area */
+.home-banner {
+  background-position: inherit;
+}
+.banner-title {
+  font-size:clamp(2.8rem, 10vw, 6.25rem);
+}
+.section-title {
+  font-size:clamp(2.2rem, 4vw, 3.125rem);
+}
+.section-text{
+  font-size:clamp(1.8rem, 3vw, 2.25rem);
+}
+@media (max-width: 1278px) {
+  .home-shape-1 {
+    width: 18vw;
+  }
+  .home-shape-2 {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1200px ) {
+  .mission-partner {
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+}
+
+/* slider area */
+.slide-1 {
+  background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/slider/slider-1.jpg') no-repeat center center / cover;
+}
+.slide-2 {
+  background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/slider/slider-2.jpg') no-repeat center center / cover;
+}
+.slide-3 {
+  background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/slider/slider-3.jpg') no-repeat center center / cover;
+}
+.slide-4 {
+  background: linear-gradient(to right, rgba(57, 86, 99, 0.7), rgba(83, 68, 98, 0.7)), url('../images/slider/slider-4.jpg') no-repeat center center / cover;
+}
+/* .slide-4 {
+  background: linear-gradient(to right, rgba(135, 150, 158, 0.4), rgba(152, 133, 155, 0.4)), url('../images/slider/slider-4.jpg') no-repeat center center / cover;
+} */
+
+.slider-content {
+  font-size: clamp(2rem, 7vw, 5rem);
+}
+
+.fenix-pagination {
+  bottom: 3.7vw !important;
+}
+
+.fenix-pagination span {
+  width: 12px;
+  height: 12px;
+  margin: 0 7px !important;
+  background-color: #e5c6e2 !important;
+  opacity: 1;
+}
+.fenix-pagination span.swiper-pagination-bullet-active {
+  background-color: #a78960 !important;
+}
+
+@media (max-width:1278px) {
+  .home-shape-3 {
+    width: 30vw;
+  }
+  .home-shape-4 {
+    width: 21vw;
+  }
+  .home-shape-6 {
+    width: 46vw;
+  }
+  .home-shape-5 {
+    width: 20vw;
+  }
+}
+
+@media (max-width:768px) {
+  .slider-content br {
+    display:none;
+  }
+  .fenix-pagination {
+    bottom: 6.7vw !important;
+  }
+}
+
+/* about area */
+.about-single-role:nth-child(even) {
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: -6.2vw;
+}
+.about-single-role:nth-child(odd) .about-role-avatar {
+  margin-right: 30px;
+  /* 2.4vw */
+}
+.about-single-role:nth-child(even) .about-role-avatar {
+  margin-left: 30px;
+  /* 2.4vw */
+}
+.about-single-role:nth-child(even) .about-role-avatar {
+  order: 1;
+}
+.about-single-role:nth-child(even) .about-role-position {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .about-single-role:nth-child(even) .about-role-avatar {
+    order: 0;
+  }
+  .about-single-role:nth-child(odd) .about-role-avatar {
+    margin-right: 0;
+    /* 2.4vw */
+  }
+  .about-single-role:nth-child(even) .about-role-avatar {
+    margin-left: 0;
+    /* 2.4vw */
+  }
+}
+
+@media (min-width: 768.5px) {
+  .fenix-input::placeholder {
+    color: transparent !important;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 2590px) {
+  /* fourkxl:max-w-[900px] fourksm:gap-[2vw] fourksm:max-w-[871px] fourksm:px-[44px] fourksm:py-[44px] */
+  .mission-partner {
+    max-width: 874px !important;
+    padding: 45px !important;
+  }
+}
+
+@media (min-width: 2591px) {
+  .mission-partner {
+    max-width: 900px !important;
+    padding: 55px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico" />
+    <title>Fenix</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+</head>
+<body>
+    <!-- <header class="header js-header px-[5.86vw] absolute w-full z-[999] mt-[45px] fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] fourkxl:px-[0.5vw] maxdp:px-[15px] transition-transform duration-75"> -->
+    <header class="header js-header px-[5.86vw] absolute w-full z-[999] mt-[45px] fourkxl:px-[0.5vw] maxdp:px-[15px]">
+        <div class="header-inner js-header-inner flex items-center justify-between fourk:absolute fourk:w-full fourk:max-w-[2100px] fourk:left-[50%] fourk:-translate-x-[50%] ">
+            <div class="header-left maxdp:hidden"> 
+                <nav>
+                    <ul class="flex -mx-[var(--menu-item-space-x)]">
+                        <li class="group"><a href="#mission" class="font-gothamlight font-normal text-[22px] text-white1  px-[var(--menu-item-space-x)] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Our Mission</a></li>
+                        <li class="group"><a href="#media" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Media</a></li>
+                        <li class="group"><a href="#team" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Our Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-center  fourksm:mr-0">
+                <div class="header-logo js-header-logo w-[21.5vw] maxsm:w-[150px]">
+                    <a href="/" class="block">
+                        <img class="w-full js-logo" src="assets/images/logo/logo.svg" alt="Fenix">
+                        <img class="max-w-[15.3vw] mx-auto hidden js-text-logo maxdp:max-w-full" src="assets/images/logo/fenix-text-logo.svg" alt="Fenix">
+                    </a>
+                </div>
+            </div>
+            <div class="header-right maxdp:hidden">
+                <nav class="maxdp:mb-[5px]">
+                    <ul class="flex -mx-[var(--menu-item-space-x)]">
+                        <li class="group"><a href="#membership" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Membership</a></li>
+                        <li class="group"><a href="#events" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Events</a></li>
+                        <li class="group"><a href="#contact" class="font-gothamlight font-normal text-[22px] text-white1  px-[2.032vw] hover:text-gold1 duration-300 relative after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 after:w-[2px] after:h-[28px] after:bg-gradient-to-t from-[#7f654a] via-[#9a836f] to-[#7f654a]  group-last:after:hidden fourksm:text-[21px]  fourklg:!px-[2.5vw] fourkm:px-[2vw]  maxlg:text-[17px] maxlg:after:h-[24px]">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="js-menu-bar hidden maxdp:block">
+                <svg height="25px" version="1.1" viewBox="0 0 25 25" width="25px"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="TabBar-Icons" stroke="none" stroke-width="1"><g fill="#a78960" id="Hamburger"><path d="M0,2 L25,2 L25,6 L0,6 L0,2 Z M0,10 L25,10 L25,14 L0,14 L0,10 Z M0,18 L25,18 L25,22 L0,22 L0,18 Z"/></g></g></svg>
+            </div>
+            <!-- #3E1238 -->
+        </div>
+        
+        <!-- mobile menu -->
+        <div class="mobile-menu js-mobile-menu flex justify-center items-center fixed inset-0 bg-white w-full h-full overflow-y-auto opacity-0 invisible bg-gradient-to-b from-[#15333F] to-[#3E1238]">
+            <div class="mobile-menu-close js-mobile-menu-close fixed top-[33px] right-[15px]">
+                <svg width="22px" data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"><title/><path fill="#a78960" d="M8.25,0,32,23.75,55.75,0,64,8.25,40.25,32,64,55.75,55.75,64,32,40.25,8.25,64,0,55.75,23.75,32,0,8.25Z" data-name="&lt;Compound Path&gt;" id="_Compound_Path_"/></svg>
+            </div>
+            <nav class="w-screen h-screen">
+                <ul class="mobile-menu-items js-mobile-menu-items w-screen h-screen flex flex-col justify-center items-center">
+                    <li><a href="#mission" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Mission</a></li>
+                    <li><a href="#media" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Media</a></li>
+                    <li><a href="#team" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Our Team</a></li>
+                    <li><a href="#membership" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Membership</a></li>
+                    <li><a href="#events" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Events</a></li>
+                    <li><a href="#contact" class="font-gothammedium font-normal text-[22px] text-gold1 capitalize px-[2.032vw] text-center hover:text-gold1 duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- start hero -->
+        <section class="home-banner relative min-h-screen maxmd:h-auto">
+            <!-- <div class="absolute inset-0 w-full h-full bg-black opacity-[.6]"></div> -->
+            <div class="banner-content px-[5.86vw] pt-[311px] relative fourksm:min-h-screen fourksm:pt-[22vw] maxdp:px-[15px] maxmd:pt-[250px]">
+                <h1 class="banner-title font-gothamlight text-gold2 text-center leading-[5.6rem] mb-[52px] fourksm:mb-[100px] maxdp:leading-none maxmd:mb-[90px]">Let’s <span class="font-luxiaregular">change</span> <br> the <span class="font-luxiaregular">landscape</span></h1>
+                <div class="banner-block max-w-[82.03vw] mx-auto grid grid-cols-3 fourklg:max-w-[69.03vw] fourksm:pb-[100px] maxlg:max-w-full maxmd:grid-cols-1">
+                    <div class="single-block px-[4.688vw] mb-[53px] relative z-10 maxlg:px-[1vw] maxmd:max-w-[350px] maxmd:mx-[auto] maxmd:px-[5vw] maxsm:px-0">
+                        <div class="bg-fuchsia2/[.7] w-[130px] h-[130px] mx-auto rounded-full flex justify-center items-center mb-[16px] maxlg:mb-[30px]">
+                            <h2 class="font-gothamlight text-[29px] text-white1">6%</h2>
+                        </div>
+                        <span class="flex justify-center items-center mb-[20px]">
+                            <svg viewBox="0 0 13 15" width="13" height="15">
+                                <title>&lt;Compound Path&gt;</title>
+                                <style>
+                                    .s0 { fill: #e7d6b7 } 
+                                </style>
+                                <path id="&lt;Compound Path&gt;" class="s0" d="m13.1 11c0 0.2-0.1 0.4-0.2 0.6-0.2 0.3-0.5 0.5-0.9 0.5q-0.5 0-1.3-0.4c-1.1-0.6-2-1.8-3.8-3.6 0.5 2.4 1.1 4 1.1 5.2 0 1.4-0.6 1.8-1.3 1.8-0.6 0-1.2-0.4-1.2-1.8 0-1.3 0.6-2.7 1.2-5.2-1.8 1.7-2.8 3-3.9 3.6-0.5 0.3-0.9 0.4-1.2 0.4-0.5 0-0.9-0.2-1.1-0.6 0-0.1-0.1-0.3-0.1-0.5 0-0.5 0.3-0.9 1.1-1.4 1.1-0.7 2.7-0.9 5.1-1.6-2.3-0.7-4-1-5.1-1.6-0.8-0.5-1.1-1-1.1-1.4q0-0.4 0.2-0.6c0.1-0.3 0.5-0.6 0.9-0.6q0.5 0 1.2 0.4c1.2 0.7 2.1 1.9 4 3.6-0.6-2.3-1.2-3.9-1.2-5.1 0-1.4 0.6-1.9 1.3-1.9 0.6 0 1.2 0.5 1.2 1.9 0 1.2-0.6 2.7-1.2 5.1 1.8-1.6 2.8-3 3.9-3.6 0.5-0.3 0.9-0.4 1.2-0.4 0.5 0 0.9 0.3 1 0.6q0.2 0.2 0.2 0.5c0 0.5-0.3 1-1.2 1.5-1 0.6-2.6 0.8-5 1.6 2.3 0.6 4 0.9 5.1 1.5 0.8 0.5 1.1 1 1.1 1.5z"/>
+                            </svg>
+                        </span>
+                        <p class="font-gothammedium text-[19px] text-white1 leading-[1.2] text-center">Investment positions held by AAPI Women</p>
+                    </div>
+                    <div class="single-block px-[4.688vw] mb-[53px] relative z-10 maxlg:px-[1vw] maxmd:max-w-[350px] maxmd:mx-[auto] maxmd:px-[5vw] maxsm:px-0">
+                        <div class="bg-slate2/[.7] w-[130px] h-[130px] mx-auto rounded-full flex justify-center items-center mb-[16px] maxlg:mb-[30px]">
+                            <h2 class="font-gothamlight text-[29px] text-white1">3%</h2>
+                        </div>
+                        <span class="flex justify-center items-center mb-[20px]">
+                            <svg viewBox="0 0 13 15" width="13" height="15">
+                                <title>&lt;Compound Path&gt;</title>
+                                <style>
+                                    .s0 { fill: #e7d6b7 } 
+                                </style>
+                                <path id="&lt;Compound Path&gt;" class="s0" d="m13.1 11c0 0.2-0.1 0.4-0.2 0.6-0.2 0.3-0.5 0.5-0.9 0.5q-0.5 0-1.3-0.4c-1.1-0.6-2-1.8-3.8-3.6 0.5 2.4 1.1 4 1.1 5.2 0 1.4-0.6 1.8-1.3 1.8-0.6 0-1.2-0.4-1.2-1.8 0-1.3 0.6-2.7 1.2-5.2-1.8 1.7-2.8 3-3.9 3.6-0.5 0.3-0.9 0.4-1.2 0.4-0.5 0-0.9-0.2-1.1-0.6 0-0.1-0.1-0.3-0.1-0.5 0-0.5 0.3-0.9 1.1-1.4 1.1-0.7 2.7-0.9 5.1-1.6-2.3-0.7-4-1-5.1-1.6-0.8-0.5-1.1-1-1.1-1.4q0-0.4 0.2-0.6c0.1-0.3 0.5-0.6 0.9-0.6q0.5 0 1.2 0.4c1.2 0.7 2.1 1.9 4 3.6-0.6-2.3-1.2-3.9-1.2-5.1 0-1.4 0.6-1.9 1.3-1.9 0.6 0 1.2 0.5 1.2 1.9 0 1.2-0.6 2.7-1.2 5.1 1.8-1.6 2.8-3 3.9-3.6 0.5-0.3 0.9-0.4 1.2-0.4 0.5 0 0.9 0.3 1 0.6q0.2 0.2 0.2 0.5c0 0.5-0.3 1-1.2 1.5-1 0.6-2.6 0.8-5 1.6 2.3 0.6 4 0.9 5.1 1.5 0.8 0.5 1.1 1 1.1 1.5z"/>
+                            </svg>
+                        </span>
+                        <p class="font-gothammedium text-[19px] text-white1 leading-[1.2] text-center">Investment partner positions held by AAPI Women</p>
+                    </div>
+                    <div class="single-block px-[4.688vw] mb-[53px] relative z-10 maxmd:max-w-[350px] maxmd:mx-[auto] maxmd:px-[5vw] maxsm:px-0">
+                        <div class="bg-cyan2/[.7] w-[130px] h-[130px] mx-auto rounded-full flex justify-center items-center mb-[16px] maxlg:mb-[30px]">
+                            <h2 class="font-gothamlight text-[29px] text-white1">77%</h2>
+                        </div>
+                        <span class="flex justify-center items-center mb-[20px]">
+                            <svg viewBox="0 0 13 15" width="13" height="15">
+                                <title>&lt;Compound Path&gt;</title>
+                                <style>
+                                    .s0 { fill: #e7d6b7 } 
+                                </style>
+                                <path id="&lt;Compound Path&gt;" class="s0" d="m13.1 11c0 0.2-0.1 0.4-0.2 0.6-0.2 0.3-0.5 0.5-0.9 0.5q-0.5 0-1.3-0.4c-1.1-0.6-2-1.8-3.8-3.6 0.5 2.4 1.1 4 1.1 5.2 0 1.4-0.6 1.8-1.3 1.8-0.6 0-1.2-0.4-1.2-1.8 0-1.3 0.6-2.7 1.2-5.2-1.8 1.7-2.8 3-3.9 3.6-0.5 0.3-0.9 0.4-1.2 0.4-0.5 0-0.9-0.2-1.1-0.6 0-0.1-0.1-0.3-0.1-0.5 0-0.5 0.3-0.9 1.1-1.4 1.1-0.7 2.7-0.9 5.1-1.6-2.3-0.7-4-1-5.1-1.6-0.8-0.5-1.1-1-1.1-1.4q0-0.4 0.2-0.6c0.1-0.3 0.5-0.6 0.9-0.6q0.5 0 1.2 0.4c1.2 0.7 2.1 1.9 4 3.6-0.6-2.3-1.2-3.9-1.2-5.1 0-1.4 0.6-1.9 1.3-1.9 0.6 0 1.2 0.5 1.2 1.9 0 1.2-0.6 2.7-1.2 5.1 1.8-1.6 2.8-3 3.9-3.6 0.5-0.3 0.9-0.4 1.2-0.4 0.5 0 0.9 0.3 1 0.6q0.2 0.2 0.2 0.5c0 0.5-0.3 1-1.2 1.5-1 0.6-2.6 0.8-5 1.6 2.3 0.6 4 0.9 5.1 1.5 0.8 0.5 1.1 1 1.1 1.5z"/>
+                            </svg>
+                        </span>
+                        <p class="font-gothammedium text-[19px] text-white1 leading-[1.2] text-center">Investment dollars that went to white founders</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end hero -->
+        <!-- start mission -->
+        <section id="mission" class="mission pt-[83px] pb-[73px] bg-gradient-to-b from-[#0e303d] to-[#16273c] relative fourkm:py-[250px] maxlg:py-[150px] maxmd:py-[90px]">
+                <div class="home-shape-1 absolute -top-[13vw] left-0 fourksm:-top-[8vw]">
+                    <img src="assets/images/shape/shape-1_1.png" alt="Image">
+                </div>
+                <div class="home-shape-2 absolute -top-[3.5vw] right-0 z-10 fourksm:-top-[2vw]">
+                    <img src="assets/images/shape/shape-2_1.png" alt="Image">
+                </div>
+            <div class="inner-area px-[5.86vw] maxdp:px-[15px]">
+                
+                <div class="section-header text-center">
+                    <h1 class="section-title inline-block font-luxiaregular text-gold2 uppercase leading-[0.8] text-center tracking-[4px] pb-[8px] mb-[30px] relative z-10 after:absolute after:w-full after:h-[2px] after:left-[50%] after:-translate-x-[50%] after:bottom-0 after:rounded">Our Mission</h1>
+                </div>
+                <div class="section-content max-w-[604px] mx-auto relative z-[12] fourklg:max-w-[1010px] maxsm:max-w-full">
+                    <p class="section-text font-gothamlight text-white1 text-center leading-[1.25] mb-[30px] last:mb-0"><span class="font-luxiadisplay uppercase">Fenix</span> is a <span class="font-luxiaregular">private membership network</span> to support <br> Asian American Women <span class="font-luxiaregular">executives in the investment industry</span>. We provide <span class="font-luxiaregular">access to curated capital <br> connections</span>, events, and executive advancement opportunities <span class="font-luxiaregular">in support of diversity initiatives.</span></p>
+                    <p class="section-text font-gothamlight text-white1 text-center leading-[1.25] mb-[30px] last:mb-0"><span class="font-luxiaregular">Fenix serves as the catalyst for changing the diversity <br> and business landscape.</span></p>
+                </div>
+            </div>
+        </section>
+        <!-- end mission -->
+        <!-- start slider -->
+        <section id="media" class="slider-area relative bg-gradient-to-b from-[#350937] to-[#201e3b]">
+            <div class="home-shape-4 absolute right-0 -bottom-[22vw] z-10 fourkm:-bottom-[12vw]">
+                <img src="assets/images/shape/shape-4_1.png" alt="Image">
+            </div>
+            <div class="inner-area">
+                <div class="swiper home-slider h-[100vh] maxlg:h-[auto]">
+                    <div class="swiper-wrapper">
+                        <div class="slider slide-1 swiper-slide table h-[100vh]">
+                            <div class="table-cell align-middle h-[100vh] text-[22px]">
+                                <div class="h-[100vh] px-[5.86vw] maxdp:px-[15px]">
+                                    <div class="home-shape-3 h-auto w-[50vw] absolute left-0 lg:bottom-0 maxlg:bottom-auto z-10">
+                                        <img class="h-full" src="assets/images/shape/shape-3.svg" alt="Image">
+                                    </div>
+                                    <article class="relative z-20 h-[100vh] pt-[370px] pb-[200px] flex flex-col gap-[40px] max-w-[68vw] mx-auto maxlg:max-w-[80vw] maxmd:justify-center maxmd:flex-col maxmd:max-w-full maxmd:gap-[50px]">
+                                        <div class="">
+                                            <p class="slider-content font-gothamlight text-gold2 leading-[0.9] maxmd:text-center"><span class="font-luxiaregular">Breaking biases</span><br/> for women in <br> <span class="font-luxiaregular">venture capital</span></p>
+
+                                        </div>
+                                        <div class="maxmd:mb-[20px] maxmd:text-center">
+                                            <a href="https://latinasinbusiness.us/2022/08/24/diane-yoo-on-breaking-biases-for-women-in-venture-capital/" target="_blank" class="inline-flex px-[25px] py-[12px] bg-gradient-to-r from-[#a28459] via-[#c6ad8c] to-[#c7a16e] rounded-[1.2rem] group ">
+                                                <span class="inline-block font-gothammedium font-bold text-[22px] leading-none bg-gradient-to-r from-[#0f2f3d] to-[#340a38] bg-clip-text text-transparent group-hover:text-slate1 duration-300 maxmd:text-[18px]">Click here</span>
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider slide-2 swiper-slide table h-[100vh]">
+                            <div class="table-cell align-middle h-[100vh] text-[22px]">
+                                <div class="h-[100vh] px-[5.86vw] maxdp:px-[15px]">
+                                    <div class="home-shape-3 h-auto w-[50vw] absolute left-0 lg:bottom-0 maxlg:bottom-auto z-10">
+                                        <img class="h-full" src="assets/images/shape/shape-3.svg" alt="Image">
+                                    </div>
+                                    <article class="relative z-20 h-[100vh] pt-[370px] pb-[200px] flex flex-col gap-[40px] max-w-[68vw] mx-auto maxlg:max-w-[80vw] maxmd:justify-center maxmd:flex-col maxmd:max-w-full maxmd:gap-[50px]">
+                                        <div class="">
+                                            <p class="slider-content font-gothamlight text-gold2 leading-[0.9] maxmd:text-center"><span class="font-luxiaregular">Create</span> your <span class="font-luxiaregular">own <br> seat</span> at the <span class="font-luxiaregular">table</span></p> 
+                                        </div>
+                                        <div class="maxmd:mb-[20px] maxmd:text-center">
+                                            <a href="https://medium.com/authority-magazinediane-yoo-5-things-we-need-to-do-to-close-the-gender-wage-gap-ef079d90aa6f" target="_blank" class="inline-flex px-[25px] py-[12px] bg-gradient-to-r from-[#a28459] via-[#c6ad8c] to-[#c7a16e] rounded-[1.2rem] group ">
+                                                <span class="inline-block font-gothammedium font-bold text-[22px] leading-none bg-gradient-to-r from-[#0f2f3d] to-[#340a38] bg-clip-text text-transparent group-hover:text-slate1 duration-300 maxmd:text-[18px]">Click here</span>
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider slide-3 swiper-slide table h-[100vh]">
+                            <div class="table-cell align-middle h-[100vh] text-[22px]">
+                                <div class="h-[100vh] px-[5.86vw] maxdp:px-[15px]">
+                                    <div class="home-shape-3 h-auto w-[50vw] absolute left-0 lg:bottom-0 maxlg:bottom-auto z-10">
+                                        <img class="h-full" src="assets/images/shape/shape-3.svg" alt="Image">
+                                    </div>
+                                    <article class="relative z-20 h-[100vh] pt-[370px] pb-[200px] flex flex-col gap-[40px] max-w-[68vw] mx-auto maxlg:max-w-[80vw] maxmd:justify-center maxmd:flex-col maxmd:max-w-full maxmd:gap-[50px]">
+                                        <div class="">
+                                            <p class="slider-content font-gothamlight text-gold2 leading-[0.9] maxmd:text-center"><span class="font-luxiaregular">Empowering</span><br> Diverse <br><span class="font-luxiaregular">Founders</span></p>
+                                            
+                                        </div>
+                                        <div class="maxmd:mb-[20px] maxmd:text-center">
+                                            <a href="https://www.houston.org/news/small-biz-insider-venture-capitalist-diane-yoo-empowering-diverse-founders" target="_blank" class="inline-flex px-[25px] py-[12px] bg-gradient-to-r from-[#a28459] via-[#c6ad8c] to-[#c7a16e] rounded-[1.2rem] group ">
+                                                <span class="inline-block font-gothammedium font-bold text-[22px] leading-none bg-gradient-to-r from-[#0f2f3d] to-[#340a38] bg-clip-text text-transparent group-hover:text-slate1 duration-300 maxmd:text-[18px]">Click here</span>
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination fenix-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- end slider -->
+        
+        <!-- start team -->
+        <section id="team" class="abt-contact pt-[93px] bg-gradient-to-r from-[#15333F] to-[#3E1238]">
+            <div class="inner-area px-[5.86vw] relative maxdp:px-[15px]">
+                <div class="home-shape-5 absolute top-0 left-0 z-10 maxlg:w-[15vw]">
+                    <img src="assets/images/shape/shape-5_3.png" alt="Image">
+                </div>
+                <div class="about-area pb-[82px]">
+                    <div class="section-header text-center">
+                        <h1 class="section-title inline-block font-luxiaregular text-gold2 uppercase leading-[0.8] text-center tracking-[4px] pb-[8px] mb-[36px] relative after:absolute after:w-full after:h-[2px] after:left-[50%] after:-translate-x-[50%] after:bottom-0 after:rounded">Our Team</h1>
+                    </div>
+                    <div class="section-content max-w-[687px] mx-auto pb-[72px] relative z-[12] maxlg:pb-[100px] maxmd:pb-[70px] fourklg:max-w-[1010px] maxmd:max-w-full">
+                        <p class="section-text font-gothamlight text-white1 text-center leading-[1.25] mb-[30px] last:mb-0"><span class="font-luxiadisplay uppercase">Fenix</span> is <span class="font-luxiaregular">founded by two Asian American women</span> that have <br> <span class="font-luxiaregular">first-hand experience</span> of the
+                            demands of being an investor, a fund partner, and an entrepreneur.</p>
+                        <p class="section-text font-gothamlight text-white1 text-center leading-[1.25] mb-[30px] last:mb-0">They came together on
+                            their passions to advance AAPI women as leaders in industries where AAPI are
+                            underrepresented.</p>
+                    </div>
+                    <div class="about-role-area">
+                        <div class="about-role-inner flex flex-wrap justify-center items-center gap-[7.8vw] relative z-[12] maxmd:flex-col">
+                            <div>
+                                <div class="about-role-avatar relative max-w-[230px] rounded-full bg-gradient-to-r from-[#a08257] via-[#cdbaa0] to-[#c7a06d] p-[3px] fourkm:max-w-[14vw] maxmd:mb-[40px]">
+                                    <img class="w-full h-full rounded-full" src="assets/images/about/avatar-2_1.jpg" alt="Avatar">
+                                </div>
+                                <h2 class="about-role-name text-center mt-[12px] font-luxiadisplay text-[20px] tracking-[2px] leading-none bg-gradient-to-r from-[#a3865b] via-[#c5ac8b] to-[#c7a06d] bg-clip-text text-transparent">Diane Yoo</h2>
+                            </div>
+                            <div>
+                                <div class="about-role-avatar relative max-w-[230px] rounded-full bg-gradient-to-r from-[#a08257] via-[#cdbaa0] to-[#c7a06d] p-[3px] fourkm:max-w-[14vw] maxmd:mb-[40px]">
+                                    <img class="w-full h-full rounded-full" src="assets/images/about/avatar-1_1.jpg" alt="Avatar">
+                                </div>
+                                <h2 class="about-role-name text-center mt-[12px] font-luxiadisplay text-[20px] tracking-[2px] leading-none bg-gradient-to-r from-[#a3865b] via-[#c5ac8b] to-[#c7a06d] bg-clip-text text-transparent">Shveta Pillai</h2>
+                            </div>
+                        </div>
+                        <!-- <div class="about-single-role flex items-center max-w-[85.5vw] relative z-10 even:maxlg:mt-[50px] maxlg:max-w-full maxmd:flex-col">
+                            <div class="about-role-avatar relative max-w-[26.56vw] rounded-full bg-gradient-to-r from-[#a08257] via-[#cdbaa0] to-[#c7a06d] p-[3px] maxmd:mb-[40px]">
+                                <img class="w-full h-full rounded-full" src="assets/images/about/avatar-2_1.jpg" alt="Avatar">
+                            </div>
+                            <div class="about-role-position maxmd:!text-center">
+                                <h2 class="about-role-name font-luxiadisplay text-[30px] tracking-[2px] leading-none bg-gradient-to-r from-[#a3865b] via-[#c5ac8b] to-[#c7a06d] bg-clip-text text-transparent mb-[24px]">Diane Yoo</h2>
+                                <div>
+                                    <span class="font-gothamlight text-[22px] text-white1 leading-none">40+ early stage consumer tech investments <br>
+                                        2 investments combined valuation $3B <br>
+                                        IR professional with $20MM in startup funding <br>
+                                        3x Venture Capital Fund Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-single-role flex items-center max-w-[85.5vw] relative z-10 even:maxlg:mt-[50px] maxlg:max-w-full maxmd:flex-col">
+                            <div class="about-role-avatar relative max-w-[26.56vw] rounded-full bg-gradient-to-r from-[#a08257] via-[#cdbaa0] to-[#c7a06d] p-[3px] maxmd:mb-[40px]">
+                                <img class="w-full h-full rounded-full" src="assets/images/about/avatar-1_1.jpg" alt="Avatar">
+                            </div>
+                            <div class="about-role-position maxmd:!text-center">
+                                <h2 class="about-role-name font-luxiadisplay text-[30px] tracking-[2px] leading-none bg-gradient-to-r from-[#a3865b] via-[#c5ac8b] to-[#c7a06d] bg-clip-text text-transparent mb-[24px]">Shveta E. Pillai</h2>
+                                <div>
+                                    <span class="font-gothamlight text-[22px] text-white1 leading-none">20+ yrs Advising C-suite, senior executives, and entrepreneurs <br>
+                                        10+ years human capital consulting for Fortune 50 and 500 organizations <br>
+                                        Co-Founded Asian Women Executive Lifestyle media platform <br>
+                                        ICF Certified PCC Level Executive Coach</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="home-shape-6 absolute z-10 -bottom-[11.9vw] right-0 maxlg:w-[34vw] maxlg:-bottom-[5vw] maxmd:bottom-0">
+                    <img class="fourkm:w-[23vw]" src="assets/images/shape/shape-6.png" alt="Image">
+                </div>
+            </div>
+        </section>
+        <section id="membership" class="memeber-benifit-area">
+            <div class="member-benifit relative">
+                <div class="membership triangle-shape relative maxdp:after:hidden">
+                    <div class="membership-bg pt-[80px] ">
+                        <div class="inner-area maxdp:px-[15px]">
+                            <div class="section-header text-center">
+                                <h1 class="section-title inline-block font-luxiaregular text-gold2 uppercase leading-[0.8] text-center tracking-[4px] pb-[7px] mb-[35px] relative after:absolute after:w-full after:h-[2px] after:left-[50%] after:-translate-x-[50%] after:bottom-0 after:rounded">Membership</h1>
+                            </div>
+                            <div class="ml-[5.08vw] relative z-10 pb-[350px] maxdp:pb-[90px] maxmd:ml-0">
+                                <p class="max-w-[44.6vw] font-gothamlight text-[23px] text-white1 leading-[1.2] mb-[35px] maxmd:max-w-full">Members are senior level Asian American women investment managers and <span class="font-luxiaregular">is by invitation only.</span></p>
+                                <div class="maxmd:ml-[20px]">
+                                    <ul class="bg-gradient-bullet-list ">
+                                        <li class="font-gothammedium text-[25px] text-white1 leading-[0.8] mb-[10px] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 maxmd:text-[20px]">General Partner</li>
+                                        <li class="font-gothammedium text-[25px] text-white1 leading-[0.8] mb-[10px] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 maxmd:text-[20px]">Managing Partner</li>
+                                        <li class="font-gothammedium text-[25px] text-white1 leading-[0.8] mb-[10px] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 maxmd:text-[20px]">Principal</li>
+                                        <li class="font-gothammedium text-[25px] text-white1 leading-[0.8] mb-[10px] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 maxmd:text-[20px]">Chief Investment Office</li>
+                                        <li class="font-gothammedium text-[25px] text-white1 leading-[0.8] mb-[10px] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 maxmd:text-[20px]">Managing Director</li>
+                                        <li class="font-gothammedium text-[25px] text-white1 leading-[0.8] mb-[10px] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 maxmd:text-[20px]">Director</li>
+                                        <li class="font-gothammedium text-[25px] text-white1 leading-[0.8] mb-[10px] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 maxmd:text-[20px]">Vice President</li>
+                                        <li class="font-gothammedium text-[25px] text-white1 leading-[0.8] mb-[10px] relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 maxmd:text-[20px]">Head of Investments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benifits absolute top-[16.8vw] right-0 maxdp:relative maxdp:top-auto maxdp:bg-gradient-to-r from-[#15333F] to-[#3E1238]">
+                        <div class="relative z-10 maxdp:py-[90px]">
+                            <div class="curved-gradient-ttitle max-w-[260px] py-[13px] px-[45px] rounded-tl-[50px] ml-auto mb-[67px] maxmd:max-w-[210px]">
+                                <span class="inline-block font-luxiaregular font-bold text-[30px] leading-none tracking-[4px] bg-gradient-to-t from-[#15333F] to-[#2C4352] bg-clip-text text-transparent maxmd:text-[25px]">Benifits</span>
+                            </div>
+                            <div class="maxdp:px-[15px]">
+                                <ul class="benifit-list bg-gradient-bullet-list mr-[5.08vw] maxdp:mr-0 maxdp:ml-[20px]">
+                                    <li class="font-gothamlight text-[25px] text-white1 leading-[1.1] mb-[27px] relative before:absolute before:top-[9px] before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 ml-auto maxdp:!ml-0"><span class="font-luxiaregular text-[#C49C55]">Investor Networking.</span> Institutional, Family Officers, and High Net Worth Investor support women led funds.</li>
+                                    <li class="font-gothamlight text-[25px] text-white1 leading-[1.1] mb-[27px] relative before:absolute before:top-[9px] before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 ml-auto maxdp:!ml-0"><span class="font-luxiaregular text-[#C49C55]">Executive Advancement.</span> C-suite and board seat opportunities.</li>
+                                    <li class="font-gothamlight text-[25px] text-white1 leading-[1.1] mb-[27px] relative before:absolute before:top-[9px] before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 ml-auto maxdp:!ml-0"><span class="font-luxiaregular text-[#C49C55]">Fenix Circles.</span> Intimate events with other high performing AAW Investment Managers.</li>
+                                    <li class="font-gothamlight text-[25px] text-white1 leading-[1.1] mb-[27px] relative before:absolute before:top-[9px] before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 ml-auto maxdp:!ml-0"><span class="font-luxiaregular text-[#C49C55]">Executive Coaching.</span> Executive and leadership coaching to achieve next level performance.</li>
+                                    <li class="font-gothamlight text-[25px] text-white1 leading-[1.1] mb-[27px] relative before:absolute before:top-[9px] before:-left-[20px] before:w-[10px] before:h-[10px] before:rounded-full last:mb-0 ml-auto maxdp:!ml-0"><span class="font-luxiaregular text-[#C49C55]">Fen-Well Programs.</span> Programming on topics impacting a women's career, health, and wellness.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="benifit min-h-[810px] absolute w-full inset-0 ">
+                    <p class="relative z-10">hello</p>
+                </div> -->
+            </div>
+        </section>
+        <section id="events" class="events bg-gradient-to-b from-[#3E1238] to-[#5E2558] pt-[75px] pb-[73px] relative">
+            <div class="inner-area px-[5.86vw] maxdp:px-[15px]">
+                <div class="section-header text-center">
+                    <h1 class="section-title inline-block font-luxiaregular text-gold2 uppercase leading-[0.8] text-center tracking-[4px] pb-[7px] mb-[35px] relative after:absolute after:w-full after:h-[2px] after:left-[50%] after:-translate-x-[50%] after:bottom-0 after:rounded">Events</h1>
+                </div>
+                <div>
+                    <p class="font-luxiadisplay text-[30px] text-gold2 tracking-[2px] text-center leading-none">Coming soon</p>
+                </div>
+            </div>
+            <div class="home-shape-7 absolute left-0 -bottom-[8.8vw] z-10 maxlg:w-[16vw]">
+                <img src="assets/images/shape/shape-7.png" alt="Image">
+            </div>
+            <div class="home-shape-8 absolute right-0 -top-[40px] z-10 maxlg:w-[32vw]">
+                <img src="assets/images/shape/shape-8.svg" alt="Image">
+            </div>
+        </section>
+        <section id="contact" class="contact-area contact-bg pt-[88px] pb-[103px] relative">
+            <div class="inner-area px-[5.86vw] relative maxdp:px-[15px]">
+                <div class="relative">
+                    <div class="section-header text-center">
+                        <h1 class="section-title inline-block font-luxiaregular text-gold2 uppercase leading-[0.8] text-center tracking-[4px] pb-[7px] mb-[50px] relative after:absolute after:w-full after:h-[2px] after:left-[50%] after:-translate-x-[50%] after:bottom-0 after:rounded">Contact Us</h1>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="home-shape-9 max-w-[18.15vw]  absolute -bottom-[18px] left-[4vw] fourk:max-w-[9vw] fourkm:max-w-[10vw] fourkm:mr-[6.5vw] maxdp:left-0 maxmd:hidden">
+                            <img class="w-full" src="assets/images/logo/fenix-bird-left.svg" alt="Image">
+                        </div>
+                        <form action="#" class="max-w-[460px] maxxsmm:max-w-full">
+                            <div class="flex px-[25px] mb-[28px] maxmd:py-[10px] maxxsmm:px-0">
+                                <label class="whitespace-nowrap font-gothamlight text-[20px] text-white1 leading-none mr-[10px] maxxsmm:hidden" for="">First Name:</label>
+                                <input class="fenix-input flex-1 font-gothamlight text-white1 text-[20px] leading-none bg-transparent  outline-none placeholder:text-white1 focus:text-white1 relative -top-[1.2px]    maxlg:text-[20px] maxmd:text-[18px] maxmd:pb-[5px]" type="text" name="fname" placeholder="First Name:">
+                            </div>
+                            <div class="flex px-[25px] mb-[28px] maxmd:py-[10px] maxxsmm:px-0">
+                                <label class="whitespace-nowrap font-gothamlight text-[20px] text-white1 leading-none mr-[10px] maxxsmm:hidden" for="">Last Name:</label>
+                                <input class="fenix-input flex-1 font-gothamlight text-white1 text-[20px] leading-none bg-transparent  outline-none placeholder:text-white1 focus:text-white1 relative -top-[1.2px]    maxlg:text-[20px] maxmd:text-[18px] maxmd:pb-[5px]" type="text" name="lname" placeholder="Last Name:">
+                            </div>
+                            <div class="flex px-[25px] mb-[28px] maxmd:py-[10px] maxxsmm:px-0">
+                                <label class="whitespace-nowrap font-gothamlight text-[20px] text-white1 leading-none mr-[10px] maxxsmm:hidden" for="">Email:</label>
+                                <input class="fenix-input flex-1 font-gothamlight text-white1 text-[20px] leading-none bg-transparent  outline-none placeholder:text-white1 focus:text-white1 relative -top-[1.2px]    maxlg:text-[20px] maxmd:text-[18px] maxmd:pb-[5px]" type="text" name="email" placeholder="Email:">
+                            </div>
+                            <div class="grid px-[25px] py-[15px] rounded-[30px] border-[3px] border-[#a3865b] gradient-border mb-[15px]">
+                                <label class="whitespace-nowrap font-gothamlight text-[20px] text-white1 leading-none mb-[3px] maxlg:text-[20px] maxmd:text-[18px] maxxsmm:hidden" for="">Message:</label>
+                                <textarea class="fenix-input flex-1 h-[97px] font-gothamlight text-white1 text-[20px] leading-none bg-transparent  outline-none placeholder:text-white1 focus:text-white1 relative  pb-[3px]  maxlg:text-[20px] maxmd:text-[18px]" name="message" placeholder="Message:"></textarea>
+                            </div>
+                            <div class="flex justify-end">
+                                <button type="submit" class="flex px-[25px] py-[12px] bg-gradient-to-r from-[#a28459] via-[#c6ad8c] to-[#c7a16e] rounded-[2.5rem] group ">
+                                    <span class="inline-block font-gothambold font-bold text-[16px] tracking-[2px] leading-[0.8] bg-gradient-to-r from-[#0f2f3d] to-[#340a38] bg-clip-text text-transparent uppercase group-hover:text-slate1 duration-300 maxmd:text-[18px]">Send</span>
+                                </button>
+                            </div>
+                        </form>
+                        <!-- <div class="home-shape-7 w-[18.15vw] mr-[3.5vw] flex items-end maxmd:hidden">
+                            <img src="assets/images/logo/fenix-bird.svg" alt="Image">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="home-shape-9 absolute bottom-0 right-[14.45vw] maxmd:w-[35vw]">
+                <img src="assets/images/shape/shape-9.svg" alt="Image">
+            </div>
+        </section>
+        <!-- end about-contact -->
+    </main>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/flowbite.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
