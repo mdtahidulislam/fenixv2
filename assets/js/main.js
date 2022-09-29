@@ -31,10 +31,12 @@
       });
 
       // menu 
-      let docStyle = getComputedStyle(document.documentElement);
-      let stickyMenuSpaceY = parseInt(docStyle.getPropertyValue('--sticky-menu-space-y')) * 2;
-      $('.js-header-1').css({'height': $('.js-header-inner-1').outerHeight() + stickyMenuSpaceY });
-      $('.js-header-2').css({'height': $('.js-header-inner-2').outerHeight() + stickyMenuSpaceY });
+      $(window).on('resize', function(){
+        let docStyle = getComputedStyle(document.documentElement);
+        let stickyMenuSpaceY = parseInt(docStyle.getPropertyValue('--sticky-menu-space-y')) * 2;
+        $('.js-header-1').css({'height': $('.js-header-inner-1').outerHeight() + stickyMenuSpaceY });
+        $('.js-header-2').css({'height': $('.js-header-inner-2').outerHeight() + stickyMenuSpaceY });
+      });
       $(window).scroll(function(){
         if ($(this).scrollTop() > 50) {
           $('.js-header-1').addClass('header-sticky');
