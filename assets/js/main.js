@@ -37,19 +37,22 @@
         $('.js-header-1').css({'height': $('.js-header-inner-1').outerHeight() + stickyMenuSpaceY });
         $('.js-header-2').css({'height': $('.js-header-inner-2').outerHeight() + stickyMenuSpaceY });
       });
-      $(window).scroll(function(){
-        if ($(this).scrollTop() > 45) {
+      function stickyMenu () {
+        if ($(window).scrollTop() > 45) {
           $('.js-header-1').addClass('header-sticky');
           $('.js-header-2').addClass('header-sticky');
-          
-            
-            
         } else {
             $('.js-header-1').removeClass('header-sticky');
             $('.js-header-2').removeClass('header-sticky');
             // $('.js-header-1').css({'height': $('.js-header-inner-1').outerHeight()});
             // $('.js-header-2').css({'height': $('.js-header-inner-2').outerHeight()});
         }
+      }
+      $(window).on('load', function(){
+        stickyMenu();
+      });
+      $(window).scroll(function(){
+        stickyMenu();
       });
 
       
@@ -62,65 +65,103 @@
       // });
 
       
-      $('.js-mobile-menu-items li').each(function(idx, elm ) {
-        const delay = idx * 0.05;
-        $(this).css({'transitionDelay': `${delay}s`});
-      });
+      function mobileMenuItemsTransition () {
+        $('.js-mobile-menu-items li').each(function(idx, elm ) {
+          const delay = idx * 0.05;
+          $(this).css({'transitionDelay': `${delay}s`});
+        });
+      }
+      mobileMenuItemsTransition();
 
-      // for header-1
-      $('.js-menu-bar-1').on('click', function(){
-        $('.js-mobile-menu-1').addClass('open');
-      });
-      $('.js-mobile-menu-close-1').on('click', function(){
-        $('.js-mobile-menu-1').removeClass('open');
-      });
+      // toggle mobile menu
+      function toggleMobileMenu (menuBarClass, menuWrapperClass, menuCloseClass) {
+        $(menuBarClass).on('click', function(){
+          $(menuWrapperClass).addClass('open');
+        });
+        $(menuCloseClass).on('click', function(){
+          $(menuWrapperClass).removeClass('open');
+        });
+      }
+      // for heading one
+      toggleMobileMenu('.js-menu-bar-1', '.js-mobile-menu-1', '.js-mobile-menu-close-1');
+      toggleMobileMenu('.js-menu-bar-2', '.js-mobile-menu-2', '.js-mobile-menu-close-2');
+
+      // $('.js-menu-bar-1').on('click', function(){
+      //   $('.js-mobile-menu-1').addClass('open');
+      // });
+      // $('.js-mobile-menu-close-1').on('click', function(){
+      //   $('.js-mobile-menu-1').removeClass('open');
+      // });
+      function smoothScroll(menuItem, menuWrapperClass, menuHeader) {
+        $(menuItem).on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            event.preventDefault();
       
-      $(".js-header-1 a").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            $(menuWrapperClass).removeClass('open');
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top - $(menuHeader).outerHeight()
+            }, {duration: 500, easing: "linear" }, function(){
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          }
+        });
+      }
+      // for header 1
+      smoothScroll('.js-header-1 a', '.js-mobile-menu-1', '.js-header-2');
+      // for header 2
+      smoothScroll('.js-header-2 a', '.js-mobile-menu-2', '.js-header-2');
+      // $(".js-header-1 a").on('click', function(event) {
+      //   // Make sure this.hash has a value before overriding default behavior
+      //   if (this.hash !== "") {
+      //     event.preventDefault();
     
-          // Store hash
-          var hash = this.hash;
-          $('.js-mobile-menu-1').removeClass('open');
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top - $('.js-header-2').outerHeight()
-          }, {duration: 500, easing: "linear" }, function(){
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
+      //     // Store hash
+      //     var hash = this.hash;
+      //     $('.js-mobile-menu-1').removeClass('open');
+      //     // Using jQuery's animate() method to add smooth page scroll
+      //     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      //     $('html, body').animate({
+      //       scrollTop: $(hash).offset().top - $('.js-header-2').outerHeight()
+      //     }, {duration: 500, easing: "linear" }, function(){
+      //       // Add hash (#) to URL when done scrolling (default click behavior)
+      //       window.location.hash = hash;
+      //     });
+      //   }
+      // });
 
       // for header-2
 
-      $('.js-menu-bar-2').on('click', function(){
-        $('.js-mobile-menu-2').addClass('open');
-      });
-      $('.js-mobile-menu-close-2').on('click', function(){
-        $('.js-mobile-menu-2').removeClass('open');
-      });
+      // $('.js-menu-bar-2').on('click', function(){
+      //   $('.js-mobile-menu-2').addClass('open');
+      // });
+      // $('.js-mobile-menu-close-2').on('click', function(){
+      //   $('.js-mobile-menu-2').removeClass('open');
+      // });
       
-      $(".js-header-2 a").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          event.preventDefault();
+      // $(".js-header-2 a").on('click', function(event) {
+      //   // Make sure this.hash has a value before overriding default behavior
+      //   if (this.hash !== "") {
+      //     event.preventDefault();
     
-          // Store hash
-          var hash = this.hash;
-          $('.js-mobile-menu-2').removeClass('open');
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top - $('.js-header-2').outerHeight()
-          }, {duration: 500, easing: "linear" }, function(){
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } 
-      });
+      //     // Store hash
+      //     var hash = this.hash;
+      //     $('.js-mobile-menu-2').removeClass('open');
+      //     // Using jQuery's animate() method to add smooth page scroll
+      //     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      //     $('html, body').animate({
+      //       scrollTop: $(hash).offset().top - $('.js-header-2').outerHeight()
+      //     }, {duration: 500, easing: "linear" }, function(){
+      //       // Add hash (#) to URL when done scrolling (default click behavior)
+      //       window.location.hash = hash;
+      //     });
+      //   } 
+      // });
       
     });
 
