@@ -38,7 +38,7 @@
         $('.js-header-2').css({'height': $('.js-header-inner-2').outerHeight() + stickyMenuSpaceY });
       });
       $(window).scroll(function(){
-        if ($(this).scrollTop() > 50) {
+        if ($(this).scrollTop() > 45) {
           $('.js-header-1').addClass('header-sticky');
           $('.js-header-2').addClass('header-sticky');
           

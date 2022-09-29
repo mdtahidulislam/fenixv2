@@ -734,23 +734,25 @@ video {
 }
 
 .header-1.header-sticky {
-  padding-top: 0;
+  /* padding-top: 0; */
   visibility: hidden;
   opacity: 0;
   transition: all 0.4s linear;
 }
 
 .header-2 {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  padding-top: var(--sticky-menu-space-y);
+  padding-bottom: var(--sticky-menu-space-y);
   visibility: hidden;
   opacity: 0;
   transition: all 0.4s linear;
 }
 
 .header-2.header-sticky {
-  padding-top: var(--sticky-menu-space-y);
-  padding-bottom: var(--sticky-menu-space-y);
+  /* padding-top: var(--sticky-menu-space-y);
+  padding-bottom: var(--sticky-menu-space-y); */
   visibility: visible;
   opacity: 1;
   transition: all 0.4s linear 0.6s;
