@@ -13,29 +13,29 @@
         },
         loop: true,
         speed: 500,
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: true,
-        },
+        // autoplay: {
+        //   delay: 3500,
+        //   disableOnInteraction: true,
+        // },
         pagination: {
           el: ".swiper-pagination",
           type: "bullets",
           clickable: true,
         },
       });
-      $(".home-slider").mouseenter(function () {
-        swiper.autoplay.stop();
-      });
-      $(".home-slider").mouseleave(function () {
-        swiper.autoplay.start();
-      });
+      // $(".home-slider").mouseenter(function () {
+      //   swiper.autoplay.stop();
+      // });
+      // $(".home-slider").mouseleave(function () {
+      //   swiper.autoplay.start();
+      // });
 
       // menu 
       $(window).on('resize', function(){
         let docStyle = getComputedStyle(document.documentElement);
         let stickyMenuSpaceY = parseInt(docStyle.getPropertyValue('--sticky-menu-space-y')) * 2;
-        $('.js-header-1').css({'height': $('.js-header-inner-1').outerHeight() + stickyMenuSpaceY });
-        $('.js-header-2').css({'height': $('.js-header-inner-2').outerHeight() + stickyMenuSpaceY });
+        // $('.js-header-1').css({'height': $('.js-header-inner-1').outerHeight() + stickyMenuSpaceY });
+        // $('.js-header-2').css({'height': $('.js-header-inner-2').outerHeight() + stickyMenuSpaceY });
       });
       function stickyMenu () {
         if ($(window).scrollTop() > 45) {
@@ -44,8 +44,6 @@
         } else {
             $('.js-header-1').removeClass('header-sticky');
             $('.js-header-2').removeClass('header-sticky');
-            // $('.js-header-1').css({'height': $('.js-header-inner-1').outerHeight()});
-            // $('.js-header-2').css({'height': $('.js-header-inner-2').outerHeight()});
         }
       }
       $(window).on('load', function(){
@@ -162,7 +160,7 @@
       //     });
       //   } 
       // });
-      
+      console.log($(window).width())
     });
 
 }(jQuery));
