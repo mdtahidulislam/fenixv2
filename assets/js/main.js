@@ -162,7 +162,7 @@
       // });
       $(window).on('orientationchange', function(event) {
         if(screen.height > screen.width){
-          $('.home-slider').css({'height': screen.width});
+          $('.home-slider').css({'height': '750px'});
         } else {
           $('.home-slider').css({'height': ''});
         }
