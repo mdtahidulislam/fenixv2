@@ -160,13 +160,25 @@
       //     });
       //   } 
       // });
-      $(window).on('orientationchange', function(event) {
-        if($(this).innerHeight() > $(this).innerWidth()){
-          $('.home-slider').css({'height': $(this).innerWidth()});
-        } else {
-          $('.home-slider').css({'height': ''});
-        }
-      });
+      // if(window.innerWidth > window.innerWidth){
+      //   $('.home-slider').css({'height': '900px'});
+      // } else {
+      //   $('.home-slider').css({'height': ''});
+      // }
+      // $(window).on('orientationchange', function(event) {
+      //   console.log('changed')
+      //   if(window.innerHeight > window.innerWidth){
+      //     $('.home-slider').css({'height': '900px'});
+      //   } else {
+      //     $('.home-slider').css({'height': ''});
+      //   }
+      // });
+      
+      if($(window).height() < 450) {
+        $('.home-slider').addClass('resize-slider');
+      } else {
+        $('.home-slider').removeClass('resize-slider');
+      }
       
     });
 

@@ -3540,3 +3540,11 @@ video {
     padding-right: 0px;
   }
 }
+
+.home-slider.resize-slider {
+  height: 600px;
+}
+
+.home-slider.resize-slider article {
+  padding-top: 200px;
+}
