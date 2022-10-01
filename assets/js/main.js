@@ -161,8 +161,8 @@
       //   } 
       // });
       $(window).on('orientationchange', function(event) {
-        if(screen.height > screen.width){
-          $('.home-slider').css({'height': screen.width});
+        if(window.innerHeight > window.innerWidth){
+          $('.home-slider').css({'height': window.innerWidth});
         } else {
           $('.home-slider').css({'height': ''});
         }
