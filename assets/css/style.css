@@ -3544,7 +3544,8 @@ video {
 .home-slider.resize-slider,  
 .home-slider.resize-slider .table, 
 .home-slider.resize-slider .table .table-cell,
-.home-slider.resize-slider .table .table-cell article {
+.home-slider.resize-slider .table .table-cell .table-inner,
+.home-slider.resize-slider .table .table-cell .table-inner article {
   min-height: 600px !important;
 }
 
